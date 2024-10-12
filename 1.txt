@@ -1,0 +1,13 @@
+?теміс?лы Данияр ИС 231(4)
+Абстрактный класс Transport
+using System;
+
+// Абстрактный класс Transport, описывающий транспортные средства
+abstract class Transport
+{
+    // Абстрактный метод для расчета времени поездки
+    public abstract double CalculateTravelTime(double distance);
+
+    // Абстрактный метод для получения информации о транспортном средстве
+    public abstract string GetTransportInfo();
+}

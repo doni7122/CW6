@@ -1,0 +1,27 @@
+?теміс?лы Данияр ИС 231(4)
+Главный класс Program
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Создание объекта автомобиля
+        Transport car = new Car();
+        // Создание объекта самолета
+        Transport plane = new Plane();
+
+        // Заданное расстояние для поездки
+        double distance = 1000; // км
+
+        // Расчет времени поездки для автомобиля
+        double carTravelTime = car.CalculateTravelTime(distance);
+        // Расчет времени поездки для самолета
+        double planeTravelTime = plane.CalculateTravelTime(distance);
+
+        // Вывод информации о транспортных средствах и времени поездки
+        Console.WriteLine(car.GetTransportInfo());
+        Console.WriteLine($"Время поездки: {carTravelTime} часов");
+        
+        Console.WriteLine(plane.GetTransportInfo());
+        Console.WriteLine($"Время поездки: {planeTravelTime} часов");
+    }
+}

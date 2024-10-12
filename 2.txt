@@ -1,0 +1,37 @@
+?теміс?лы Данияр ИС 231(4)
+Классы-наследники Car и Plane
+// Класс-наследник Car, представляющий автомобиль
+class Car : Transport
+{
+    // Реализация метода CalculateTravelTime для автомобиля
+    public override double CalculateTravelTime(double distance)
+    {
+        // Средняя скорость автомобиля 80 км/ч
+        double speed = 80;
+        return distance / speed;
+    }
+
+    // Реализация метода GetTransportInfo для автомобиля
+    public override string GetTransportInfo()
+    {
+        return "Автомобиль со средней скоростью 80 км/ч";
+    }
+}
+
+// Класс-наследник Plane, представляющий самолет
+class Plane : Transport
+{
+    // Реализация метода CalculateTravelTime для самолета
+    public override double CalculateTravelTime(double distance)
+    {
+        // Средняя скорость самолета 600 км/ч
+        double speed = 600;
+        return distance / speed;
+    }
+
+    // Реализация метода GetTransportInfo для самолета
+    public override string GetTransportInfo()
+    {
+        return "Самолет со средней скоростью 600 км/ч";
+    }
+}
